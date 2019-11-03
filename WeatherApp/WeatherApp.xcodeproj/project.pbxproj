@@ -14,6 +14,7 @@
 		0FF9BFB8236EE20800C8F3C5 /* WeatherAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF9BFB7236EE20800C8F3C5 /* WeatherAppTests.swift */; };
 		0FF9BFC3236EE20800C8F3C5 /* WeatherAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF9BFC2236EE20800C8F3C5 /* WeatherAppUITests.swift */; };
 		0FF9BFD1236EE28C00C8F3C5 /* ChooseCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF9BFD0236EE28C00C8F3C5 /* ChooseCityViewController.swift */; };
+		0FF9BFD3236EE34400C8F3C5 /* ChooseCityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF9BFD2236EE34400C8F3C5 /* ChooseCityViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		0FF9BFC2236EE20800C8F3C5 /* WeatherAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAppUITests.swift; sourceTree = "<group>"; };
 		0FF9BFC4236EE20800C8F3C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0FF9BFD0236EE28C00C8F3C5 /* ChooseCityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseCityViewController.swift; sourceTree = "<group>"; };
+		0FF9BFD2236EE34400C8F3C5 /* ChooseCityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseCityViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				0FF9BFA0236EE20600C8F3C5 /* AppDelegate.swift */,
 				0FF9BFA6236EE20600C8F3C5 /* Main.storyboard */,
 				0FF9BFD0236EE28C00C8F3C5 /* ChooseCityViewController.swift */,
+				0FF9BFD2236EE34400C8F3C5 /* ChooseCityViewModel.swift */,
 				0FF9BFA9236EE20800C8F3C5 /* Assets.xcassets */,
 				0FF9BFAB236EE20800C8F3C5 /* LaunchScreen.storyboard */,
 				0FF9BFAE236EE20800C8F3C5 /* Info.plist */,
@@ -256,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FF9BFD3236EE34400C8F3C5 /* ChooseCityViewModel.swift in Sources */,
 				0FF9BFD1236EE28C00C8F3C5 /* ChooseCityViewController.swift in Sources */,
 				0FF9BFA1236EE20600C8F3C5 /* AppDelegate.swift in Sources */,
 			);

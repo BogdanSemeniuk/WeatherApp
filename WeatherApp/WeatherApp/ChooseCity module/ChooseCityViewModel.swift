@@ -9,10 +9,18 @@
 import Foundation
 
 final class ChooseCityViewModel {
-    let cities = City.allCities
+    let allCities = City.allCities
+    var city: String {
+        return allCities.first ?? ""
+    }
     
-    func city(at index: Int) -> String {
-        guard index >= 0, index <= cities.count - 1 else { return "" }
-        return cities[index]
+    func index(of city: String) throws -> Int {
+        guard let index = allCities.firstIndex(of: city) else { throw CitiesError.cityIsUnknown }
+        return index
+    }
+    
+    func city(at index: Int) throws -> String {
+        guard index >= 0, index <= allCities.count - 1 else { throw CitiesError.indexOutOfRange}
+        return allCities[index]
     }
 }

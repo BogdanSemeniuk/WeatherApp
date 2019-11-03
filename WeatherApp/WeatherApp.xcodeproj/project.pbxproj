@@ -18,6 +18,7 @@
 		0FF9BFD5236EE8FD00C8F3C5 /* ChooseCityConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF9BFD4236EE8FD00C8F3C5 /* ChooseCityConfigurator.swift */; };
 		0FF9BFD8236EEAAD00C8F3C5 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF9BFD7236EEAAD00C8F3C5 /* City.swift */; };
 		0FF9C016236EEE1900C8F3C5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF9C015236EEE1900C8F3C5 /* SceneDelegate.swift */; };
+		0FF9C018236EF18500C8F3C5 /* CitiesError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF9C017236EF18500C8F3C5 /* CitiesError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		0FF9BFD4236EE8FD00C8F3C5 /* ChooseCityConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseCityConfigurator.swift; sourceTree = "<group>"; };
 		0FF9BFD7236EEAAD00C8F3C5 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		0FF9C015236EEE1900C8F3C5 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0FF9C017236EF18500C8F3C5 /* CitiesError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				0FF9BFA0236EE20600C8F3C5 /* AppDelegate.swift */,
 				0FF9C015236EEE1900C8F3C5 /* SceneDelegate.swift */,
 				0FF9BFD7236EEAAD00C8F3C5 /* City.swift */,
+				0FF9C017236EF18500C8F3C5 /* CitiesError.swift */,
 				0FF9BFA6236EE20600C8F3C5 /* Main.storyboard */,
 				0FF9BFD6236EEA0200C8F3C5 /* ChooseCity module */,
 				0FF9BFA9236EE20800C8F3C5 /* Assets.xcassets */,
@@ -276,6 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FF9C018236EF18500C8F3C5 /* CitiesError.swift in Sources */,
 				0FF9BFD5236EE8FD00C8F3C5 /* ChooseCityConfigurator.swift in Sources */,
 				0FF9BFD8236EEAAD00C8F3C5 /* City.swift in Sources */,
 				0FF9BFD3236EE34400C8F3C5 /* ChooseCityViewModel.swift in Sources */,

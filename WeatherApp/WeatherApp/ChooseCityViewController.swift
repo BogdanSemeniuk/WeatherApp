@@ -9,5 +9,9 @@
 import UIKit
 
 final class ChooseCityViewController: UIViewController {
+    @IBOutlet weak var cityLabel: UILabel!
+    @IBOutlet weak var citiesTableView: UITableView!
     
+    @IBAction func showWeatherAction(_ sender: UIButton) {
+    }
 }

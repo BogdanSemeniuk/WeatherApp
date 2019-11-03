@@ -26,6 +26,9 @@
                                         <rect key="frame" x="136.5" y="112.5" width="141" height="38"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
                                         <state key="normal" title="Show weather"/>
+                                        <connections>
+                                            <action selector="showWeatherAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xBQ-OY-ceP"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -76,6 +79,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="citiesTableView" destination="u5k-7c-ixf" id="QKN-kH-f8N"/>
+                        <outlet property="cityLabel" destination="dlG-Gq-L6j" id="Jaf-A4-52Y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

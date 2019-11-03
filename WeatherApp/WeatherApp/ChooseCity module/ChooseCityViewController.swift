@@ -33,10 +33,12 @@ extension ChooseCityViewController: UITableViewDelegate {
 // MARK: - UITableViewDataSource
 extension ChooseCityViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return chooseCityViewModel.cities.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let cell = UITableViewCell()
+        cell.textLabel?.text = chooseCityViewModel.city(at: indexPath.row)
+        return cell
     }
 }

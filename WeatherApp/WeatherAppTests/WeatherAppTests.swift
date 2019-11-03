@@ -14,11 +14,13 @@ class WeatherAppTests: XCTestCase {
     var chooseCityViewModel: ChooseCityViewModel!
 
     override func setUp() {
+        super.setUp()
         chooseCityViewModel = ChooseCityViewModel()
     }
 
     override func tearDown() {
         chooseCityViewModel = nil
+        super.tearDown()
     }
 
     func testAllCitiesCount() {

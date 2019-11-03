@@ -23,13 +23,7 @@ final class ChooseCityViewController: UIViewController {
             self?.cityLabel.text = city
             self?.citiesTableView.selectRow(at: IndexPath(row: indexRow, section: 0), animated: true, scrollPosition: .top)
         }
-    }
-    
-
-    private func showAlert(withMessage message: String) {
-        let alert = UIAlertController(title: "Alert", message: message, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Ok", style: .cancel))
-        present(alert, animated: true)
+        chooseCityViewModel.select(indexRow: 0)
     }
     
     @IBAction private func showWeatherAction(_ sender: UIButton) {
@@ -39,7 +33,7 @@ final class ChooseCityViewController: UIViewController {
 // MARK: - UITableViewDelegate
 extension ChooseCityViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        chooseCityViewModel.select(indexRow: indexPath.row)
     }
 }
 

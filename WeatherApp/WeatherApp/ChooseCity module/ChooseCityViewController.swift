@@ -19,6 +19,10 @@ final class ChooseCityViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configurator.configure(controller: self)
+        chooseCityViewModel.selectedCityAtIndex = { [weak self] city, indexRow in
+            self?.cityLabel.text = city
+            self?.citiesTableView.selectRow(at: IndexPath(row: indexRow, section: 0), animated: true, scrollPosition: .top)
+        }
     }
     
 
@@ -47,6 +51,7 @@ extension ChooseCityViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
+        cell.textLabel?.text = chooseCityViewModel.allCities[indexPath.row]
         return cell
     }
 }

@@ -17,12 +17,17 @@ struct City {
     
     static let allCities = [City("London"), City("Kiev"), City("New York"), City("Chicago"), City("Lviv"), City("Moscow"), City("Cherkasy"), City("Pekin")]
     
-    static let requestCity = ["London": "City of London",
-                              "Kiev": "Kiev,ua",
-                              "New York": "New York County",
-                              "Chicago": "Chicago,US",
-                              "Lviv": "Lviv",
-                              "Moscow": "Moscow,RU",
-                              "Cherkasy": "Cherkasy",
-                              "Pekin": "Pekin"]
+    static func requestName(for city: City) -> String {
+        let requestNames = ["London": "City of London",
+        "Kiev": "Kiev,ua",
+        "New York": "New York County",
+        "Chicago": "Chicago,US",
+        "Lviv": "Lviv",
+        "Moscow": "Moscow,RU",
+        "Cherkasy": "Cherkasy",
+        "Pekin": "Pekin"]
+        return requestNames[city.name] ?? "Unknown city"
+    }
+    
+    
 }

@@ -9,7 +9,13 @@
 import Foundation
 
 struct City {
-    static let allCities = ["London", "Kiev", "New York", "Chicago", "Lviv", "Moscow", "Cherkasy", "Pekin"]
+    let name: String
+    
+    init(_ cityName: String) {
+        self.name = cityName
+    }
+    
+    static let allCities = [City("London"), City("Kiev"), City("New York"), City("Chicago"), City("Lviv"), City("Moscow"), City("Cherkasy"), City("Pekin")]
     
     static let requestCity = ["London": "City of London",
                               "Kiev": "Kiev,ua",

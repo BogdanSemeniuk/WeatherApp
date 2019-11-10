@@ -45,7 +45,7 @@ extension ChooseCityViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
-        cell.textLabel?.text = chooseCityViewModel.allCities[indexPath.row]
+        cell.textLabel?.text = chooseCityViewModel.allCities[indexPath.row].name
         return cell
     }
 }

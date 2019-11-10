@@ -18,6 +18,6 @@ final class ChooseCityViewModel {
     
     private func city(at index: Int) -> String? {
         guard index >= 0, index <= allCities.count else { return nil }
-        return allCities[index]
+        return allCities[index].name
     }
 }

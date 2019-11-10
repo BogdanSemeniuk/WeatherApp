@@ -84,6 +84,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F568B2E23784426000BC450 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0FF9BFD7236EEAAD00C8F3C5 /* City.swift */,
+				0FF9C017236EF18500C8F3C5 /* CitiesError.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		0FF9BF94236EE20600C8F3C5 = {
 			isa = PBXGroup;
 			children = (
@@ -109,8 +118,7 @@
 			children = (
 				0FF9BFA0236EE20600C8F3C5 /* AppDelegate.swift */,
 				0FF9C015236EEE1900C8F3C5 /* SceneDelegate.swift */,
-				0FF9BFD7236EEAAD00C8F3C5 /* City.swift */,
-				0FF9C017236EF18500C8F3C5 /* CitiesError.swift */,
+				0F568B2E23784426000BC450 /* Models */,
 				0FF9BFA6236EE20600C8F3C5 /* Main.storyboard */,
 				0FF9BFD6236EEA0200C8F3C5 /* ChooseCity module */,
 				0FF9BFA9236EE20800C8F3C5 /* Assets.xcassets */,

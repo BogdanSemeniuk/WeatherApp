@@ -28,6 +28,4 @@ struct City {
         "Pekin": "Pekin"]
         return requestNames[city.name] ?? "Unknown city"
     }
-    
-    
 }

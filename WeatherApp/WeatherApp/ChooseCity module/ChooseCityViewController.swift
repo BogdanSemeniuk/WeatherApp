@@ -27,6 +27,7 @@ final class ChooseCityViewController: UIViewController {
     }
     
     @IBAction private func showWeatherAction(_ sender: UIButton) {
+        
     }
 }
 
